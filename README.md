@@ -27,7 +27,7 @@
 * We will use yarn for project development. Of the choices presented we have used the first option from the list
 
 ```
-$ yarn create nuxt-app .
+$ yarn create nuxt-app products
 Programming language: (javascript, typescript)
 Package manager: (yarn, npm)
 UI framework: (none, ant, balmui, bootstrap vue, chakra ui, buefy, oruga, primevue, tachyons, tailwind css, windi css, vant, view ui, vuetify.js)

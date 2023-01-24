@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h2>Welcome to our Sample Products App!!</h2>
-  </div>
+    <div>Main Products Listing</div>
 </template>
 
 <script>
@@ -9,7 +7,7 @@ export default {
   layout: 'default',
    head(){
         return {
-            title: "Welcome to Sample Product listing in Nuxt",
+            title: "Main Sample Product listing in Nuxt",
             meta: [
                 {
                     hid: "description",
@@ -21,3 +19,7 @@ export default {
     } 
 }
 </script>
+
+<style>
+
+</style>
