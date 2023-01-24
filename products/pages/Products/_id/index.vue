@@ -1,21 +1,19 @@
 <template>
 <div>
-    <Product v-for="product in products" :key="product.id" :id="product.id" :product="product.brand" :image="product.images[0]"/>
+    <nuxt-link to="/products">Back to Products</nuxt-link>
+    <h2> {{ product.title }} : {{ product.brand }} </h2>
+    <div><img :src="product.thumbnail" width="100" height="100"/>{{ product.description }}</div><hr />
+    <small>Product ID: {{ $route.params.id }}</small>
 </div>
 </template>
 
 <script>
 import axios from "axios";
-import Product from "../../components/Product";
-
 export default {
    layout: 'default',
-   components: {
-    Product
-   },
    data(){
     return {
-        products: []
+        product: {}
     }
    },
    async created(){
@@ -24,18 +22,17 @@ export default {
             'Accept': 'application/json'
         }
     }
-
     try{
-        const res = await axios.get("https://dummyjson.com/products", config);
+        const res = await axios.get(`https://dummyjson.com/products/${this.$route.params.id}`, config);
         console.log(res.data);
-        this.products = res.data.products;
+        this.product = res.data;
     }catch (err){
         console.log(err);
     }
    },
    head(){
         return {
-            title: "Main Sample Product listing in Nuxt",
+            title: this.product.brand,
             meta: [
                 {
                     hid: "description",

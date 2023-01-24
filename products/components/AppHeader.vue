@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <header class="header">
-    <h1 class="title">Sample Product Listing App</h1>
+    <h1 class="title">Products App</h1>
     <ul>
       <li>
         <nuxt-link to='/'>Home</nuxt-link>

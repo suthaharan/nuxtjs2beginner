@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <AppHeader />
     <Nuxt />
   </div>
@@ -40,6 +40,5 @@ ul{
     overflow: hidden;
     padding: 1rem 2rem;
     background: #fff;
-
 }
 </style>
