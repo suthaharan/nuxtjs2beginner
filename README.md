@@ -86,7 +86,7 @@ export default {
 
 The page that you created can be viewed in the URL http://localhost:3000/about
 
-As part of the continued learning, we will go ahead to create the following changes to the product listing app
+As part of continued learning, we will go ahead and create the following changes to the product listing app
 * Use axios to pull product listing data
 * Create a single product page to list product specific information and link to it from the product listing page
 * Create a search form to do a basic search and display of products based on the search term
