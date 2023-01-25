@@ -126,6 +126,9 @@ Every time we click the related post link we will notice the page reload for the
     <nuxt-link :to={name: 'posts-id', params: {id: related.id} }">{{related.title}}</nuxt-link>
 ```
 
+**Single page product listing**
+![Single Page](./assets/nuxt2-posts.jpg)
+
 **Steps before Deployment**
 ```
 $ yarn build
@@ -144,6 +147,7 @@ $ heroku login
 $ heroku git:remote -a nuxtjs2beginner
 
 $ git push heroku master
+
 To tell Heroku to launch npm run build, edit package.json
 
 "scripts": {
