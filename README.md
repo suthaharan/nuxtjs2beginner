@@ -42,7 +42,8 @@ Common problem in javascript is that it is hard to deal with SEO and meta tags. 
 $ yarn create nuxt-app products
 Programming language: (javascript, typescript)
 Package manager: (yarn, npm)
-UI framework: (none, ant, balmui, bootstrap vue, chakra ui, buefy, oruga, primevue, tachyons, tailwind css, windi css, vant, view ui, vuetify.js)
+UI framework: (none, ant, balmui, bootstrap vue, chakraui, buefy, oruga, primevue, tachyons, tailwind css, 
+              windi css, vant, view ui, vuetify.js)
 Template engine: (html, pug)
 Nuxt.js modules: (axios, PWA, git based headless cms)
 Linting tools: (eslint, prettier, lint staged files, stylelint, commitlint)
@@ -126,8 +127,18 @@ Every time we click the related post link we will notice the page reload for the
     <nuxt-link :to={name: 'posts-id', params: {id: related.id} }">{{related.title}}</nuxt-link>
 ```
 
-**Single page product listing**
+**Single page post listing (with related posts**
+
 ![Single Page](./assets/nuxt2-posts.jpg)
+
+
+#### Vuex Store
+* Using a store to manage the state of the application
+* In NuxtJS application, /store folder is used for the state management
+* Classic mode: global store, Modules mode: to work with Vuex modules
+* If you are creating the vuex store, you will need to restart the application
+* 
+
 
 **Steps before Deployment**
 ```

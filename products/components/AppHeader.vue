@@ -10,7 +10,7 @@
         <nuxt-link to='/about'>About</nuxt-link>
       </li>
       <li>
-        <nuxt-link to='/posts/1'>Posts</nuxt-link>
+        <nuxt-link to='/posts'>Posts</nuxt-link>
       </li>
       <li>
         <nuxt-link to='/products'>Products</nuxt-link>
