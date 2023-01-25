@@ -1,7 +1,9 @@
 <template>
 <nuxt-link :to="'/products/' + id ">
     <div class="product">
-        <p>{{ product }} <img :src="image" width="100" height="100"/></p>
+        <p>Brand: {{ brand }}</p>
+        <p>Title: {{ title }}</p>
+        <p>Category: {{ category }}</p>
     </div>
 </nuxt-link> 
 
@@ -9,7 +11,7 @@
 <script>
 export default {
     name: "Product",
-    props: ["product", "image", "id"]
+    props: ["brand", "title", "category", "image", "id"]
 }
 </script>
 

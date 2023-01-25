@@ -1,8 +1,12 @@
 <template>
 <div>
     <nuxt-link to="/products">Back to Products</nuxt-link>
+    <div class="displayproduct">
     <h2> {{ product.title }} : {{ product.brand }} </h2>
-    <div><img :src="product.thumbnail" width="100" height="100"/>{{ product.description }}</div><hr />
+    <img :src="product.thumbnail" width="100" height="100"/>
+    </div>
+    <p>{{ product.description }}</p>
+    <hr />
     <small>Product ID: {{ $route.params.id }}</small>
 </div>
 </template>
@@ -46,5 +50,5 @@ export default {
 </script>
 
 <style>
-
+.displayproduct{text-align: center;}
 </style>
