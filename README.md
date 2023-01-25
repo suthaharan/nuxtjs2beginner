@@ -85,3 +85,9 @@ export default {
 ```
 
 The page that you created can be viewed in the URL http://localhost:3000/about
+
+**Home page**
+![Home Page](./assets/nuxt2-home.jpg)
+
+**Single page product listing**
+![Single Page](./assets/nuxt2-singlepage.jpg)
