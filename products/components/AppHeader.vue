@@ -4,10 +4,13 @@
     <h1 class="title">Products App</h1>
     <ul>
       <li>
-        <nuxt-link to='/'>Home</nuxt-link>
+        <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
       </li>
       <li>
         <nuxt-link to='/about'>About</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to='/posts/1'>Posts</nuxt-link>
       </li>
       <li>
         <nuxt-link to='/products'>Products</nuxt-link>
